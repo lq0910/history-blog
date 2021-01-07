@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://lq0910.github.io/</id>
+    <title>lq</title>
+    <updated>2021-01-07T11:38:57.393Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://lq0910.github.io/"/>
+    <link rel="self" href="https://lq0910.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://lq0910.github.io/images/avatar.png</logo>
+    <icon>https://lq0910.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, lq</rights>
+</feed>
