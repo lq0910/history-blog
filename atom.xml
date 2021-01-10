@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lq0910.github.io/</id>
     <title>lq</title>
-    <updated>2021-01-07T13:17:06.768Z</updated>
+    <updated>2021-01-10T09:03:26.310Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lq0910.github.io/"/>
     <link rel="self" href="https://lq0910.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://lq0910.github.io/images/avatar.png</logo>
     <icon>https://lq0910.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, lq</rights>
+    <entry>
+        <title type="html"><![CDATA[pip安装opencv-python 国内阿里云源]]></title>
+        <id>https://lq0910.github.io/post/pip-an-zhuang-opencv-python-guo-nei-a-li-yun-yuan/</id>
+        <link href="https://lq0910.github.io/post/pip-an-zhuang-opencv-python-guo-nei-a-li-yun-yuan/">
+        </link>
+        <updated>2021-01-10T07:18:45.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="安装-opencv-python">安装 opencv-python</h3>
+<h3 id="使用国内源-i-httpsmirrorsaliyuncompypisimple">使用国内源 -i https://mirrors.aliyun.com/pypi/simple/</h3>
+<p><code>pip install opencv-python -i https://mirrors.aliyun.com/pypi/simple/</code></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Aurelia 好用强大的前端mvvm框架 ]]></title>
         <id>https://lq0910.github.io/post/aurelia-hao-yong-qiang-da-de-qian-duan-mvvm-kuang-jia/</id>
