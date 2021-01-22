@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lq0910.github.io/</id>
     <title>lq</title>
-    <updated>2021-01-10T09:03:26.310Z</updated>
+    <updated>2021-01-22T06:27:25.174Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lq0910.github.io/"/>
     <link rel="self" href="https://lq0910.github.io/atom.xml"/>
@@ -10,6 +10,146 @@
     <logo>https://lq0910.github.io/images/avatar.png</logo>
     <icon>https://lq0910.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, lq</rights>
+    <entry>
+        <title type="html"><![CDATA[H5移动端CSS横向滚动实现]]></title>
+        <id>https://lq0910.github.io/post/h5-yi-dong-duan-css-heng-xiang-gun-dong-shi-xian/</id>
+        <link href="https://lq0910.github.io/post/h5-yi-dong-duan-css-heng-xiang-gun-dong-shi-xian/">
+        </link>
+        <updated>2021-01-22T06:15:31.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="方案一">方案一</h1>
+<h3 id="hmtl">HMTL</h3>
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="方案一">方案一</h1>
+<h3 id="hmtl">HMTL</h3>
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<!-- more -->
+<h3 id="css">CSS</h3>
+<pre><code class="language-css">    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+</code></pre>
+<!-- more -->
+<p>🔔<a href="https://codepen.io/lq0910/pen/JjRVQvB">在线代码示例</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[geojson-to-kml geojson导出kml]]></title>
+        <id>https://lq0910.github.io/post/geojson-to-kml-geojson-dao-chu-kml/</id>
+        <link href="https://lq0910.github.io/post/geojson-to-kml-geojson-dao-chu-kml/">
+        </link>
+        <updated>2021-01-22T05:21:04.000Z</updated>
+        <content type="html"><![CDATA[<p><em>This is a fork of <a href="https://github.com/mapbox/tokml">mapbox/tokml</a>.</em></p>
+<h1 id="geojson-to-kml">geojson-to-kml</h1>
+<p>Convert <a href="http://geojson.org/">GeoJSON</a> to <a href="https://developers.google.com/kml/documentation/">KML</a>.</p>
+<h2 id="usage">Usage</h2>
+<p>with node</p>
+<pre><code>npm install --save geojson-to-kml
+</code></pre>
+<h2 id="example">Example</h2>
+<pre><code class="language-js">import tokml from &quot;geojson-to-kml&quot;;
+
+// kml is a string of KML data, geojsonObject is a JavaScript object of
+// GeoJSON data
+const kml = tokml(geojsonObject);
+
+// grab name and description properties from each object and write them in
+// KML
+const kmlNameDescription = tokml(geojsonObject, {
+  name: &quot;name&quot;,
+  description: &quot;description&quot;
+});
+
+// name and describe the KML document as a whole
+const kmlDocumentName = tokml(geojsonObject, {
+  documentName: &quot;My List Of Markers&quot;,
+  documentDescription: &quot;One of the many places you are not I am&quot;
+});
+</code></pre>
+<h2 id="api">API</h2>
+<h3 id="tokmlgeojsonobject-options"><code>tokml(geojsonObject, [options])</code></h3>
+<p>Given <a href="http://geojson.org/">GeoJSON</a> data as an object, return KML data as a<br>
+string of XML.</p>
+<p><code>options</code> is an optional object that takes the following options:</p>
+<p><strong>The property to name/description mapping:</strong> while GeoJSON supports freeform<br>
+<code>properties</code> on each feature, KML has an expectation of <code>name</code> and <code>description</code><br>
+properties that are often styled and displayed automatically. These options let<br>
+you define a mapping from the GeoJSON style to KML's.</p>
+<ul>
+<li><code>name</code>: the name of the property in each GeoJSON Feature that contains<br>
+the feature's name</li>
+<li><code>description</code>: the name of the property in each GeoJSON Feature that contains<br>
+the feature's description</li>
+</ul>
+<p><strong>Timestamp:</strong> KML can associate features with a moment in time via the <code>TimeStamp</code> tag. GeoJSON doesn't<br>
+have a comparable field, but a custom property can be mapped</p>
+<ul>
+<li><code>timestamp</code>: the name of the property in each GeoJSON Feature that contains<br>
+a timestamp in XML Schema Time (yyyy-mm-ddThh:mm:sszzzzzz)</li>
+</ul>
+<p><strong>Document name and description</strong>: KML supports <code>name</code> and <code>description</code> properties<br>
+for the full document.</p>
+<ul>
+<li><code>documentName</code>: the name of the full document</li>
+<li><code>documentDescription</code>: the description of the full document</li>
+</ul>
+<p><strong><a href="https://github.com/mapbox/simplestyle-spec">simplestyle-spec</a></strong> support:</p>
+<ul>
+<li><code>simplestyle</code>: set to <code>true</code> to convert simplestyle-spec styles into KML styles</li>
+</ul>
+<h2 id="development">Development</h2>
+<p>Requires <a href="http://nodejs.org/">node.js</a>.</p>
+<h3 id="install">install</h3>
+<pre><code class="language-bash">npm install
+</code></pre>
+<h3 id="test">test</h3>
+<pre><code class="language-bash">npm test
+</code></pre>
+<h3 id="build">build</h3>
+<pre><code class="language-bash">npm run build
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[QGIS OSGeo4W 国内镜像源急速下载]]></title>
+        <id>https://lq0910.github.io/post/qgis-osgeo4w-guo-nei-jing-xiang-yuan-ji-su-xia-zai/</id>
+        <link href="https://lq0910.github.io/post/qgis-osgeo4w-guo-nei-jing-xiang-yuan-ji-su-xia-zai/">
+        </link>
+        <updated>2021-01-22T05:03:23.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="注意本仓库手动同步不保证所有内容是最新的">🚩注意：本仓库手动同步，不保证所有内容是最新的！</h4>
+<h4 id="使用方法">使用方法</h4>
+<blockquote>
+<p>打开 OSGeo4W Setup ，在 “Choose A Download Site” 页面的 User URL 中输入地址 http://gwmodel.whu.edu.cn/mirrors/osgeo4w ，点击 Add 按钮，然后选择该镜像进行安装</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://lq0910.github.io//post-images/1611292237713.png" alt="" loading="lazy"></figure>
+]]></summary>
+        <content type="html"><![CDATA[<h4 id="注意本仓库手动同步不保证所有内容是最新的">🚩注意：本仓库手动同步，不保证所有内容是最新的！</h4>
+<h4 id="使用方法">使用方法</h4>
+<blockquote>
+<p>打开 OSGeo4W Setup ，在 “Choose A Download Site” 页面的 User URL 中输入地址 http://gwmodel.whu.edu.cn/mirrors/osgeo4w ，点击 Add 按钮，然后选择该镜像进行安装</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://lq0910.github.io//post-images/1611292237713.png" alt="" loading="lazy"></figure>
+<!-- more -->
+<p><a href="https://download.osgeo.org/osgeo4w/osgeo4w-setup-x86_64.exe">osgeo4w-setup-x86_64 下载 🔗</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[pip安装opencv-python 国内阿里云源]]></title>
         <id>https://lq0910.github.io/post/pip-an-zhuang-opencv-python-guo-nei-a-li-yun-yuan/</id>
