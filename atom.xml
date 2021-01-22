@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lq0910.github.io/</id>
     <title>lq</title>
-    <updated>2021-01-22T06:27:25.174Z</updated>
+    <updated>2021-01-22T06:34:21.768Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lq0910.github.io/"/>
     <link rel="self" href="https://lq0910.github.io/atom.xml"/>
@@ -39,15 +39,6 @@
   &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-<!-- more -->
-<h3 id="css">CSS</h3>
-<pre><code class="language-css">    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-</code></pre>
-<!-- more -->
-<p>🔔<a href="https://codepen.io/lq0910/pen/JjRVQvB">在线代码示例</a></p>
 ]]></content>
     </entry>
     <entry>
@@ -56,76 +47,6 @@
         <link href="https://lq0910.github.io/post/geojson-to-kml-geojson-dao-chu-kml/">
         </link>
         <updated>2021-01-22T05:21:04.000Z</updated>
-        <content type="html"><![CDATA[<p><em>This is a fork of <a href="https://github.com/mapbox/tokml">mapbox/tokml</a>.</em></p>
-<h1 id="geojson-to-kml">geojson-to-kml</h1>
-<p>Convert <a href="http://geojson.org/">GeoJSON</a> to <a href="https://developers.google.com/kml/documentation/">KML</a>.</p>
-<h2 id="usage">Usage</h2>
-<p>with node</p>
-<pre><code>npm install --save geojson-to-kml
-</code></pre>
-<h2 id="example">Example</h2>
-<pre><code class="language-js">import tokml from &quot;geojson-to-kml&quot;;
-
-// kml is a string of KML data, geojsonObject is a JavaScript object of
-// GeoJSON data
-const kml = tokml(geojsonObject);
-
-// grab name and description properties from each object and write them in
-// KML
-const kmlNameDescription = tokml(geojsonObject, {
-  name: &quot;name&quot;,
-  description: &quot;description&quot;
-});
-
-// name and describe the KML document as a whole
-const kmlDocumentName = tokml(geojsonObject, {
-  documentName: &quot;My List Of Markers&quot;,
-  documentDescription: &quot;One of the many places you are not I am&quot;
-});
-</code></pre>
-<h2 id="api">API</h2>
-<h3 id="tokmlgeojsonobject-options"><code>tokml(geojsonObject, [options])</code></h3>
-<p>Given <a href="http://geojson.org/">GeoJSON</a> data as an object, return KML data as a<br>
-string of XML.</p>
-<p><code>options</code> is an optional object that takes the following options:</p>
-<p><strong>The property to name/description mapping:</strong> while GeoJSON supports freeform<br>
-<code>properties</code> on each feature, KML has an expectation of <code>name</code> and <code>description</code><br>
-properties that are often styled and displayed automatically. These options let<br>
-you define a mapping from the GeoJSON style to KML's.</p>
-<ul>
-<li><code>name</code>: the name of the property in each GeoJSON Feature that contains<br>
-the feature's name</li>
-<li><code>description</code>: the name of the property in each GeoJSON Feature that contains<br>
-the feature's description</li>
-</ul>
-<p><strong>Timestamp:</strong> KML can associate features with a moment in time via the <code>TimeStamp</code> tag. GeoJSON doesn't<br>
-have a comparable field, but a custom property can be mapped</p>
-<ul>
-<li><code>timestamp</code>: the name of the property in each GeoJSON Feature that contains<br>
-a timestamp in XML Schema Time (yyyy-mm-ddThh:mm:sszzzzzz)</li>
-</ul>
-<p><strong>Document name and description</strong>: KML supports <code>name</code> and <code>description</code> properties<br>
-for the full document.</p>
-<ul>
-<li><code>documentName</code>: the name of the full document</li>
-<li><code>documentDescription</code>: the description of the full document</li>
-</ul>
-<p><strong><a href="https://github.com/mapbox/simplestyle-spec">simplestyle-spec</a></strong> support:</p>
-<ul>
-<li><code>simplestyle</code>: set to <code>true</code> to convert simplestyle-spec styles into KML styles</li>
-</ul>
-<h2 id="development">Development</h2>
-<p>Requires <a href="http://nodejs.org/">node.js</a>.</p>
-<h3 id="install">install</h3>
-<pre><code class="language-bash">npm install
-</code></pre>
-<h3 id="test">test</h3>
-<pre><code class="language-bash">npm test
-</code></pre>
-<h3 id="build">build</h3>
-<pre><code class="language-bash">npm run build
-</code></pre>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[QGIS OSGeo4W 国内镜像源急速下载]]></title>
@@ -134,20 +55,8 @@ for the full document.</p>
         </link>
         <updated>2021-01-22T05:03:23.000Z</updated>
         <summary type="html"><![CDATA[<h4 id="注意本仓库手动同步不保证所有内容是最新的">🚩注意：本仓库手动同步，不保证所有内容是最新的！</h4>
-<h4 id="使用方法">使用方法</h4>
-<blockquote>
-<p>打开 OSGeo4W Setup ，在 “Choose A Download Site” 页面的 User URL 中输入地址 http://gwmodel.whu.edu.cn/mirrors/osgeo4w ，点击 Add 按钮，然后选择该镜像进行安装</p>
-</blockquote>
-<figure data-type="image" tabindex="1"><img src="https://lq0910.github.io//post-images/1611292237713.png" alt="" loading="lazy"></figure>
 ]]></summary>
         <content type="html"><![CDATA[<h4 id="注意本仓库手动同步不保证所有内容是最新的">🚩注意：本仓库手动同步，不保证所有内容是最新的！</h4>
-<h4 id="使用方法">使用方法</h4>
-<blockquote>
-<p>打开 OSGeo4W Setup ，在 “Choose A Download Site” 页面的 User URL 中输入地址 http://gwmodel.whu.edu.cn/mirrors/osgeo4w ，点击 Add 按钮，然后选择该镜像进行安装</p>
-</blockquote>
-<figure data-type="image" tabindex="1"><img src="https://lq0910.github.io//post-images/1611292237713.png" alt="" loading="lazy"></figure>
-<!-- more -->
-<p><a href="https://download.osgeo.org/osgeo4w/osgeo4w-setup-x86_64.exe">osgeo4w-setup-x86_64 下载 🔗</a></p>
 ]]></content>
     </entry>
     <entry>
@@ -156,10 +65,6 @@ for the full document.</p>
         <link href="https://lq0910.github.io/post/pip-an-zhuang-opencv-python-guo-nei-a-li-yun-yuan/">
         </link>
         <updated>2021-01-10T07:18:45.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="安装-opencv-python">安装 opencv-python</h3>
-<h3 id="使用国内源-i-httpsmirrorsaliyuncompypisimple">使用国内源 -i https://mirrors.aliyun.com/pypi/simple/</h3>
-<p><code>pip install opencv-python -i https://mirrors.aliyun.com/pypi/simple/</code></p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Aurelia 好用强大的前端mvvm框架 ]]></title>
@@ -172,26 +77,6 @@ for the full document.</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>👏  推荐一款前端框架 <strong>Aurelia</strong> ！<br>
 ✍️  <strong>Aurelia</strong> 一个简单功能强大的mvvm前端框架 基于TypeScript 构建组件的框架 ... ...</p>
-<!-- more -->
-<p><img src="https://lq0910.github.io//post-images/1610021292062.png" alt="" loading="lazy"><br>
-<a href="https://github.com/aurelia/">Github</a><br>
-<a href="http://aurelia.io/">Aurelia 官网</a><br>
-<a href="http://aurelia.io/docs/">文档</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  易于学习<br>
-Aurelia 基于标准的风格使它成为唯一允许您使用原生 JavaScript 或 TypeScript 构建组件的框架。如果您了解现代 JS 和 HTML，那么构建最复杂的应用也没有什么需要学习的了。</p>
-<p>🌉  高性能<br>
-Aurelia 的核心是高性能的响应式系统，能够以将其他框架及其虚拟 DOM 留给灰尘的方式批处理 DOM 更新。无论您的 UI 多么复杂，都体验一致、可扩展的性能。</p>
-<p>🏷️  双向数据绑定<br>
-Aurelia 支持对任何对象进行强大的数据绑定。通过使用自适应技术，Aurelia 选择最有效的方法来观察模型中的每个属性，并自动同步 UI 和状态，并实现一流的性能。</p>
-<p>📋  路由、组合和渐进增强<br>
-利用 Aurelia 的高级客户端路由器及其可插拔管道和子路由器。不需要路由器，但需要动态的数据驱动 UI 组合？我们也这样做。有旧版应用？Aurelia 的渐进式增强和脚本标记构建也使得我们很容易逐步采用。</p>
-<p>💻  使用约定轻松编码<br>
-通过约定，您可以专注于代码和业务逻辑。Aurelia 是当今唯一将代码位于应用中心而不是框架的框架。</p>
-<p>🌱 团队已经过多年实践，框架强烈推荐，只是目前国内使用的团队和开发者比较少，没有三大框架那么火，希望有一天aurelia可以火起来吧，让更多开发者加入🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>强烈建议体验喔！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
