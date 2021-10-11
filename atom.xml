@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lq0910.github.io/</id>
     <title>lq</title>
-    <updated>2021-01-22T06:34:21.768Z</updated>
+    <updated>2021-10-11T07:38:49.622Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lq0910.github.io/"/>
     <link rel="self" href="https://lq0910.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://lq0910.github.io/images/avatar.png</logo>
     <icon>https://lq0910.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, lq</rights>
+    <entry>
+        <title type="html"><![CDATA[ES6语法学习]]></title>
+        <id>https://lq0910.github.io/post/es6-yu-fa-xue-xi/</id>
+        <link href="https://lq0910.github.io/post/es6-yu-fa-xue-xi/">
+        </link>
+        <updated>2021-10-11T07:35:57.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[H5移动端CSS横向滚动实现]]></title>
         <id>https://lq0910.github.io/post/h5-yi-dong-duan-css-heng-xiang-gun-dong-shi-xian/</id>
